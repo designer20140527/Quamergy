@@ -158,7 +158,14 @@ nav ul li a:hover {
     align-items: center;
 }
 
-h1 {
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 24px;
+}
+
+.hero-content h1 {
     font-family: 'Neue Machina', sans-serif;
     font-size: 65px;
     font-weight: 400;
@@ -168,6 +175,27 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.hero-content h1 .gradient-text {
+    background: linear-gradient(
+        110deg,
+        #E2ECE5 20%,
+        #9fc7aa 40%,
+        #9fc7aa 60%,
+        #E2ECE5 80%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .gradient-text {
@@ -205,6 +233,10 @@ h1 {
     h1 {
         font-size: 36px;
     }
+
+    .hero-image img {
+        max-width: 80%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -222,6 +254,10 @@ h1 {
     
     h1 {
         font-size: 32px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
     }
 }
 
@@ -429,7 +465,7 @@ h1 {
 }
 
 .world-icon {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     height: 48px;
 }
 
