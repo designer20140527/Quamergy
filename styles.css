@@ -1,0 +1,1016 @@
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('assets/fonts/Neue Machina.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #339a50;
+    --bg-color: #0f1215;
+    --text-color: #ffffff;
+    --secondary-bg: #1a1d21;
+    --header-width: 1500px;
+    --content-width: 1300px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(15, 18, 21, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.header-content {
+    max-width: var(--header-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.btn-primary:hover {
+    background-color: #3baf5c;
+    transform: translateY(-2px);
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 65vh;
+}
+
+/* 移除之前的点状背景和动画点样式 */
+.hero::before {
+    display: none;
+}
+
+/* Canvas样式 */
+#dotCanvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero-content, .hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    background: linear-gradient(110deg, #8ab295, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-text {
+    display: inline;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-cta {
+    margin-top: 40px;
+}
+
+.tech-diagram {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+    }
+    
+    .hero-content {
+        margin-bottom: 50px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    nav {
+        margin: 20px 0;
+    }
+    
+    .cta-button {
+        margin-top: 20px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0 120px;
+    position: relative;
+}
+
+.features-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.features h2 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(110deg, #8ab295, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.05;
+}
+
+/* 大卡片样式 */
+.main-feature {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    margin-bottom: 40px;
+    border-radius: 35px;
+    background: linear-gradient(135deg, 
+        rgba(51, 154, 80, 0.15), 
+        rgba(15, 18, 21, 0.95)
+    );
+    border: 1px solid rgba(51, 154, 80, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.main-feature-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.main-feature-image {
+    flex: 1;
+    height: 400px;
+}
+
+/* 大卡片标题 */
+.main-feature-content h3 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: #ffffff;
+    line-height: 1.05;
+}
+
+.main-feature-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 小卡片网格 */
+.sub-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* 小卡片样式 */
+.sub-feature {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 35px;
+    background: linear-gradient(135deg, 
+        rgba(51, 154, 80, 0.15), 
+        rgba(15, 18, 21, 0.95)
+    );
+    border: 1px solid rgba(51, 154, 80, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.sub-feature-image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+/* 小卡片标题 */
+.sub-feature-content h3 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: #ffffff;
+    line-height: 1.05;
+}
+
+.sub-feature-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .main-feature {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px;
+    }
+    
+    .main-feature-content {
+        padding-right: 0;
+    }
+    
+    .main-feature-image {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .sub-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .features h2 {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+    
+    .main-feature,
+    .sub-feature {
+        padding: 30px;
+    }
+    
+    .main-feature-content h3,
+    .sub-feature-content h3 {
+        font-size: 28px;
+    }
+}
+
+/* Features Section -> World Section */
+.world-section {
+    padding: 120px 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.world-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.world-section h2 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(110deg, #8ab295, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.05;
+}
+
+.world-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.world-card {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.world-icon {
+    margin-bottom: 30px;
+    height: 48px;
+}
+
+.world-icon svg {
+    opacity: 0.9;
+}
+
+/* World Section 卡片标题 */
+.world-card h3 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1.05;
+}
+
+.world-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 响应式设计补充 */
+@media (max-width: 1200px) {
+    .world-section h2 {
+        font-size: 48px;
+    }
+    
+    .world-cards {
+        gap: 30px;
+    }
+    
+    .world-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .world-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .world-section h2 {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+    
+    .world-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* About Section */
+.about {
+    padding: 0 0 60px 0;
+    position: relative;
+}
+
+.about-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    background: rgba(8, 10, 12, 0.5);
+    border-radius: 35px;
+    backdrop-filter: blur(10px);
+}
+
+.about-image {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-text {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* About Section 响应式设计 */
+@media (max-width: 1200px) {
+    .about-content {
+        padding: 30px;
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-content {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px;
+    }
+    
+    .about-text p {
+        font-size: 18px;
+    }
+    
+    .about-image {
+        height: 300px;
+    }
+}
+
+/* Build Section */
+.build-section {
+    padding: 120px 0;
+    position: relative;
+    background: linear-gradient(180deg, 
+        rgba(15, 18, 21, 0.98),
+        rgba(51, 154, 80, 0.08)
+    );
+}
+
+.build-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.build-content h2 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 80px;
+    background: linear-gradient(110deg, #8ab295, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.05;
+}
+
+.build-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    row-gap: 60px;
+}
+
+.build-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.build-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, 
+        rgba(51, 154, 80, 0.3),
+        rgba(51, 154, 80, 0.1)
+    );
+    border: 1px solid rgba(51, 154, 80, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(51, 154, 80, 0.1);
+}
+
+.build-item h3 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1.05;
+}
+
+.build-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .build-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .build-content h2 {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+    
+    .build-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Case Study Section */
+.case-study {
+    padding: 120px 0;
+    position: relative;
+    background: var(--bg-color);
+}
+
+.case-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.case-image {
+    flex: 1;
+    height: 500px;
+    border-radius: 24px;
+    background: rgba(26, 29, 33, 0.5);
+    border: 1px solid rgba(51, 154, 80, 0.1);
+    overflow: hidden;
+}
+
+.case-info {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.case-label {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.case-info h2 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #ffffff;
+    line-height: 1.05;
+}
+
+.case-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.case-info p:last-of-type {
+    margin-bottom: 40px;
+}
+
+.case-cta {
+    margin-top: 40px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .case-content {
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .case-info {
+        padding-right: 0;
+    }
+    
+    .case-image {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-info h2 {
+        font-size: 40px;
+    }
+    
+    .case-image {
+        height: 300px;
+    }
+}
+
+/* Activate Section */
+.activate-section {
+    padding: 120px 0;
+    position: relative;
+    background: var(--bg-color);
+}
+
+.activate-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.activate-info {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.activate-info h2 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.activate-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.activate-footnote {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.activate-image {
+    flex: 1;
+    height: 500px;
+    border-radius: 24px;
+    background: rgba(26, 29, 33, 0.5);
+    border: 1px solid rgba(51, 154, 80, 0.1);
+    overflow: hidden;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .activate-content {
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .activate-info {
+        padding-right: 0;
+    }
+    
+    .activate-image {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .activate-info h2 {
+        font-size: 40px;
+    }
+    
+    .activate-image {
+        height: 300px;
+    }
+}
+
+/* Footer */
+.footer {
+    padding: 80px 0 40px;
+    background: var(--bg-color);
+    border-top: 1px solid rgba(51, 154, 80, 0.1);
+}
+
+.footer-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.footer-main {
+    flex: 1;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-logo span {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 400px;
+}
+
+.footer-links {
+    flex: 0 0 200px;
+}
+
+.footer-links h4 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    max-width: var(--content-width);
+    margin: 60px auto 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 0 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+
+    .footer-links {
+        align-self: flex-end;
+        width: 200px;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+    }
+}
+
+/* Partners Section */
+.partners-section {
+    padding: 120px 0 180px;
+    position: relative;
+    background: var(--bg-color);
+}
+
+.partners-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.partners-content h2 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.05;
+    text-align: center;
+    margin-bottom: 80px;
+    background: linear-gradient(110deg, #8ab295, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.partners-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.partners-row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.partner-item {
+    width: 200px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 24px;
+    background: rgba(26, 29, 33, 0.5);
+    border: 1px solid rgba(51, 154, 80, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.partner-item:hover {
+    background: rgba(51, 154, 80, 0.1);
+    border-color: rgba(51, 154, 80, 0.2);
+    transform: translateY(-2px);
+}
+
+.partner-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(200%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.partner-item:hover img {
+    filter: grayscale(0%) brightness(100%);
+    opacity: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .partners-grid {
+        gap: 30px;
+    }
+    
+    .partners-row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .partner-item {
+        width: 150px;
+        height: 60px;
+        padding: 15px;
+    }
+}
