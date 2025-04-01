@@ -11,7 +11,15 @@
     <link rel="icon" type="image/png" href="assets/images/logo-transparent.png">
 </head>
 <body>
-    <div class="container">
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#a8e16a;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#339a50;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div id="home" class="container">
         <header>
             <div class="header-content">
                 <div class="logo">
@@ -20,14 +28,14 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Build</a></li>
-                        <li><a href="#">Ecosystem</a></li>
-                        <li><a href="#">Ecosystem</a></li>
-                        <li><a href="#">Ecosystem</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#product">Product</a></li>
                     </ul>
                 </nav>
                 <div class="cta-button">
-                    <a href="#" class="btn btn-primary">Documentation <span class="arrow">→</span></a>
+                    <a href="#" class="btn btn-primary">Dextools <span class="arrow">→</span></a>
                 </div>
             </div>
         </header>
@@ -39,7 +47,7 @@
                     <h1>Welcome to the <span class="gradient-text">Era of Data Reimagined</span></h1>
                     <p>Web3 is redefining trust, and Quamergy is redefining data for Web3.</p>
                     <div class="hero-cta">
-                        <a href="#" class="btn btn-primary">Get Started <span class="arrow">→</span></a>
+                        <a href="https://t.me/Quamergy" target="_blank" class="btn btn-primary">Join the Telegram <span class="arrow">→</span></a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -47,18 +55,21 @@
                 </div>
             </section>
 
-            <section class="world-section">
+            <section id="about" class="world-section">
                 <div class="world-content">
                     <h2>This is a whole new world</h2>
                     <div class="world-cards">
                         <div class="world-card">
                             <div class="world-icon">
-                                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Hourglass--Streamline-Plump">
-                                    <desc>Hourglass Streamline Icon: https://streamlinehq.com</desc>
-                                    <g id="hourglass--hourglass-loading-measure-clock-time">
-                                        <!-- 外部轮廓 -->
-                                    <path id="Union" fill="#a8e16a" d="M8.36397 2.5C6.40951 16.1818 17.1599 20.0909 17.1599 24c0 3.9091 -10.75039 7.8182 -8.79593 21.5H39.6363c1.955 -13.6818 -8.7946 -17.5909 -8.7946 -21.5 0 -3.9091 10.7496 -7.8182 8.7946 -21.5H8.36397Z" stroke-width="1"></path><path id="Union_2" fill="#339a50" fill-rule="evenodd" d="M2.5 2.5c0 -1.10457 0.89543 -2 2 -2h39c1.1046 0 2 0.89543 2 2s-0.8954 2 -2 2h-1.6586c0.3292 6.2351 -1.8793 10.5079 -4.284 13.6341 -0.8701 1.1312 -1.8361 2.1906 -2.6275 3.0584l-0.0002 0.0002 -0.0005 0.0005c-0.3507 0.3846 -0.6672 0.7316 -0.9257 1.0306 -0.4646 0.5372 -0.775 0.947 -0.9672 1.2835 -0.1885 0.3297 -0.1946 0.4716 -0.1946 0.4927 0 0.0211 0.0061 0.163 0.1946 0.4927 0.1922 0.3365 0.5026 0.7463 0.9672 1.2835 0.2587 0.2991 0.5753 0.6464 0.9263 1.0313l0.0001 0c0.7914 0.8678 1.7574 1.9272 2.6275 3.0584 2.4047 3.1262 4.6132 7.399 4.284 13.6341H43.5c1.1046 0 2 0.8954 2 2s-0.8954 2 -2 2h-39c-1.10457 0 -2 -0.8954 -2 -2s0.89543 -2 2 -2h1.65889C5.83 37.2648 8.03887 32.992 10.4438 29.8658c0.8701 -1.1312 1.8362 -2.1904 2.6277 -3.0582l0 -0.0001 0.0001 -0.0001 0.0003 -0.0004c0.3509 -0.3847 0.6675 -0.7318 0.9261 -1.0308 0.4646 -0.5372 0.7751 -0.9471 0.9673 -1.2835 0.1884 -0.3297 0.1946 -0.4717 0.1946 -0.4927 0 -0.021 -0.0062 -0.163 -0.1946 -0.4927 -0.1922 -0.3364 -0.5027 -0.7463 -0.9673 -1.2835 -0.2587 -0.2991 -0.5754 -0.6464 -0.9265 -1.0313l0 -0.0001c-0.7915 -0.8678 -1.7576 -1.927 -2.6277 -3.0582C8.03887 15.008 5.83 10.7352 6.15889 4.5H4.5c-1.10457 0 -2 -0.89543 -2 -2Zm7.6657 41h27.6689c0.3283 -5.2008 -1.4601 -8.6113 -3.4478 -11.1954 -0.7739 -1.0062 -1.5148 -1.8164 -2.2451 -2.615 -0.3898 -0.4262 -0.7765 -0.8492 -1.1637 -1.2968 -0.5126 -0.5927 -1.0267 -1.2365 -1.4147 -1.9156 -0.3919 -0.6857 -0.7216 -1.521 -0.7216 -2.4772 0 -0.9562 0.3297 -1.7915 0.7216 -2.4772 0.388 -0.6791 0.9021 -1.3228 1.4147 -1.9156 0.3871 -0.4476 0.7739 -0.8706 1.1637 -1.2968 0.7303 -0.7986 1.4712 -1.6088 2.2451 -2.615 1.9877 -2.5841 3.7761 -5.99461 3.4478 -11.1954H10.1657c-0.32799 5.20071 1.4607 8.6112 3.4485 11.1953 0.7741 1.0062 1.515 1.8164 2.2454 2.615 0.3898 0.4262 0.7766 0.8492 1.1638 1.2969 0.5126 0.5927 1.0268 1.2365 1.4149 1.9155 0.3918 0.6857 0.7216 1.5211 0.7216 2.4773 0 0.9562 -0.3298 1.7916 -0.7216 2.4773 -0.3881 0.679 -0.9023 1.3228 -1.4149 1.9156 -0.3872 0.4476 -0.774 0.8706 -1.1639 1.2968l0 0.0001c-0.7303 0.7985 -1.4712 1.6087 -2.2453 2.6149 -1.9878 2.5841 -3.77649 5.9946 -3.4485 11.1953Zm13.8341 -14.1484c-1.2287 0 -2.5087 0.4907 -3.6845 1.1848 -1.1908 0.7029 -2.3592 1.6641 -3.3857 2.7227 -1.0268 1.0589 -1.9362 2.2405 -2.595 3.4017 -0.6462 1.1389 -1.1075 2.3564 -1.1075 3.4635 0 0.5523 0.4477 1 1 1h19.5454c0.5523 0 1 -0.4477 1 -1 0 -1.1071 -0.4614 -2.3246 -1.1075 -3.4635 -0.6588 -1.1612 -1.5682 -2.3428 -2.595 -3.4017 -1.0266 -1.0586 -2.1949 -2.0198 -3.3858 -2.7227 -1.1758 -0.6941 -2.4558 -1.1848 -3.6844 -1.1848Zm0.0003 -19.36527c2.9186 -0.00025 5.8902 0.43847 8.1895 1.35827 0.4916 0.1966 0.7447 0.7424 0.5773 1.2447 -0.5677 1.7032 -2.0502 3.5542 -3.637 4.9536 -0.8067 0.7116 -1.6781 1.3403 -2.5324 1.7966 -0.8356 0.4463 -1.7419 0.7745 -2.5952 0.7745 -0.8532 0 -1.7598 -0.3282 -2.5958 -0.7744 -0.8546 -0.4562 -1.7266 -1.0849 -2.5339 -1.7964 -1.5878 -1.3994 -3.0716 -3.2504 -3.6394 -4.9539 -0.1675 -0.5025 0.0858 -1.0484 0.5776 -1.2449 2.2992 -0.9186 5.2706 -1.35783 8.1893 -1.35807Z" clip-rule="evenodd" stroke-width="1"></path>
-                                    </g>
+                                <svg width="35" height="35" viewBox="0 0 24 24" fill="none">
+                                    <defs>
+                                        <linearGradient id="world-icon-gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#a8e16a;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#339a50;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="url(#world-icon-gradient-1)" stroke-width="2"/>
+                                    <path d="M12 7V12L15 15" stroke="url(#world-icon-gradient-1)" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </div>
                             <h3>Real-time & Composable</h3>
@@ -66,10 +77,15 @@
                         </div>
                         <div class="world-card">
                             <div class="world-icon">
-                                <svg width="35" xmlns="http://www.w3.org/2000/svg" fill="none" height="35" viewBox="0 0 48 48">
-                                    <g id="shield-1--shield-protection-security-defend-crime-war-cover"><path id="Rectangle 114" fill="#A8E16A" d="M4.2107 7.14899c0.17829 -1.65667 1.16642 -3.03577 2.79082 -3.39895C9.57607 3.17443 14.5986 2.5 24 2.5s14.4239 0.67443 16.9985 1.25004c1.6244 0.36318 2.6125 1.74228 2.7908 3.39895 0.3013 2.79989 0.7107 7.55851 0.7107 12.74651 0 0.4954 -0.0037 0.9834 -0.0108 1.463 -0.1223 8.3599 -4.3602 16.1323 -11.4824 20.4987C29.7186 43.873 26.34 45.5 24 45.5s-5.7186 -1.627 -9.0068 -3.6428C7.87102 37.4908 3.63306 29.7184 3.51075 21.3585c-0.00702 -0.4796 -0.01075 -0.9676 -0.01075 -1.463 0 -5.188 0.40938 -9.94662 0.7107 -12.74651Z" stroke-width="1"></path><path id="Union" fill="#339A50" fill-rule="evenodd" d="M7.4379 5.70185C9.81565 5.17024 14.6779 4.5 24 4.5c9.3222 0 14.1843 0.67024 16.5621 1.20185 0.6046 0.13519 1.1302 0.65315 1.2387 1.66114 0.2969 2.75881 0.6992 7.44081 0.6992 12.53251 0 0.4854 -0.0037 0.9636 -0.0105 1.4337 -0.1128 7.7062 -4.0164 14.8308 -10.528 18.8229 -1.5971 0.9791 -3.1719 1.8358 -4.5967 2.4421 -1.463 0.6225 -2.5971 0.9058 -3.3648 0.9058 -0.7677 0 -1.9018 -0.2833 -3.3648 -0.9058 -1.4248 -0.6063 -2.9996 -1.463 -4.5967 -2.4421C9.52693 36.16 5.62328 29.0354 5.51054 21.3292 5.50366 20.8591 5.5 20.3809 5.5 19.8955c0 -5.0917 0.40232 -9.7737 0.69922 -12.5325 0.10848 -1.008 0.63404 -1.52596 1.23868 -1.66115ZM24 0.5c-9.4807 0 -14.66352 0.67861 -17.43486 1.29823 -2.64415 0.59117 -4.09486 2.83141 -4.34296 5.13676C1.91644 9.776 1.5 14.6111 1.5 19.8955c0 0.5054 0.00381 1.0032 0.01096 1.4922 0.13188 9.0137 4.70414 17.4338 12.43694 22.1745 1.6911 1.0368 3.4498 2.0015 5.1213 2.7127C20.7026 46.9699 22.4277 47.5 24 47.5c1.5723 0 3.2974 -0.5301 4.9308 -1.2251 1.6715 -0.7112 3.4302 -1.6759 5.1213 -2.7127 7.7328 -4.7407 12.3051 -13.1608 12.4369 -22.1744 0.0072 -0.4891 0.011 -0.9868 0.011 -1.4923 0 -5.2844 -0.4164 -10.11951 -0.7222 -12.96052 -0.2481 -2.30534 -1.6988 -4.54558 -4.3429 -5.13675C38.6635 1.17862 33.4807 0.5 24 0.5Zm-8.6926 10.8041c1.6989 -0.2678 4.415 -0.5092 8.6928 -0.5092 4.2779 0 6.9939 0.2414 8.6928 0.5092 1.9239 0.3033 3.0702 1.8807 3.2391 3.7192 0.1475 1.6066 0.2954 3.8027 0.2954 6.1554 0 5.4522 -2.7666 10.5959 -7.5184 13.3216 -0.8394 0.4815 -1.6842 0.9093 -2.4769 1.2179 -0.7859 0.306 -1.5547 0.5085 -2.232 0.5085 -0.6773 0 -1.4461 -0.2025 -2.232 -0.5085 -0.7926 -0.3086 -1.6375 -0.7364 -2.4769 -1.2179 -4.7518 -2.7257 -7.5184 -7.8694 -7.5184 -13.3216 0 -2.3527 0.1479 -4.5488 0.2955 -6.1554 0.1688 -1.8385 1.3152 -3.4159 3.239 -3.7192Z" clip-rule="evenodd" stroke-width="1"></path></g></svg>
-                                    <circle cx="24" cy="24" r="20" fill="none" stroke="#339a50" stroke-width="2"/>
-                                    <path d="M24 12V24L32 28" stroke="#339a50" stroke-width="2" stroke-linecap="round"/>
+                                <svg width="35" height="35" viewBox="0 0 24 24" fill="none">
+                                    <defs>
+                                        <linearGradient id="world-icon-gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#a8e16a;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#339a50;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M12 3L4 7V17L12 21L20 17V7L12 3Z" stroke="url(#world-icon-gradient-2)" stroke-width="2"/>
+                                    <path d="M8 12L11 15L16 9" stroke="url(#world-icon-gradient-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
                             <h3>Consensus Validated</h3>
@@ -77,10 +93,16 @@
                         </div>
                         <div class="world-card">
                             <div class="world-icon">
-                                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" fill="none"  viewBox="0 0 48 48">
-                                    <g id="industry-innovation-and-infrastructure"><path id="Rectangle 1097" fill="#A8E16A" d="M3.23335 38.4702c0.12143 1.1689 0.86937 2.1411 1.93715 2.6318 2.21694 1.0189 6.109 2.648 8.3295 2.648 2.2205 0 6.1126 -1.6291 8.3295 -2.648 1.0678 -0.4907 1.8157 -1.4629 1.9371 -2.6318 0.1193 -1.1474 0.2334 -2.8619 0.2334 -5.2202 0 -2.3583 -0.1141 -4.0728 -0.2334 -5.2202 -0.1214 -1.1689 -0.8693 -2.1411 -1.9371 -2.6318 -2.2169 -1.0189 -6.109 -2.648 -8.3295 -2.648 -2.2205 0 -6.11256 1.6291 -8.32949 2.648 -1.06779 0.4907 -1.81573 1.4629 -1.93716 2.6318C3.11414 29.1772 3 30.8917 3 33.25c0 2.3583 0.11414 4.0728 0.23335 5.2202Z" stroke-width="1"></path><path id="Rectangle 1098" fill="#A8E16A" d="M24.2334 38.4702c0.1214 1.1689 0.8693 2.1411 1.9371 2.6318 2.2169 1.0189 6.109 2.648 8.3295 2.648 2.2205 0 6.1126 -1.6291 8.3295 -2.648 1.0678 -0.4907 1.8157 -1.4629 1.9371 -2.6318 0.1193 -1.1474 0.2334 -2.8619 0.2334 -5.2202 0 -2.3583 -0.1141 -4.0728 -0.2334 -5.2202 -0.1214 -1.1689 -0.8693 -2.1411 -1.9371 -2.6318 -2.2169 -1.0189 -6.109 -2.648 -8.3295 -2.648 -2.2205 0 -6.1126 1.6291 -8.3295 2.648 -1.0678 0.4907 -1.8157 1.4629 -1.9371 2.6318C24.1141 29.1772 24 30.8917 24 33.25c0 2.3583 0.1141 4.0728 0.2334 5.2202Z" stroke-width="1"></path><path id="Rectangle 1096" fill="#A8E16A" d="M13.7334 19.9702c0.1214 1.1689 0.8693 2.1411 1.9371 2.6318 2.2169 1.0189 6.109 2.648 8.3295 2.648 2.2205 0 6.1126 -1.6291 8.3295 -2.648 1.0678 -0.4907 1.8157 -1.4629 1.9371 -2.6318 0.1193 -1.1474 0.2334 -2.8619 0.2334 -5.2202 0 -2.3583 -0.1141 -4.0728 -0.2334 -5.22024 -0.1214 -1.16885 -0.8693 -2.14106 -1.9371 -2.63179C30.1126 5.87913 26.2205 4.25 24 4.25c-2.2205 0 -6.1126 1.62913 -8.3295 2.64797 -1.0678 0.49073 -1.8157 1.46294 -1.9371 2.6318C13.6141 10.6772 13.5 12.3917 13.5 14.75s0.1141 4.0728 0.2334 5.2202Z" stroke-width="1"></path><path id="Union" fill="#339A50" fill-rule="evenodd" d="M19.1733 3.30418C20.7181 2.76355 22.5238 2.25 24 2.25s3.2819 0.51355 4.8267 1.05418c1.6107 0.56368 3.2011 1.25405 4.338 1.77652 1.6575 0.76175 2.891 2.31473 3.0912 4.2424 0.1268 1.2206 0.2441 3.0041 0.2441 5.4269 0 2.4227 -0.1173 4.2063 -0.2441 5.4269 -0.0262 0.2525 -0.0701 0.4986 -0.1305 0.7373 1.0686 0.1943 2.1908 0.5363 3.2013 0.89 1.6107 0.5637 3.2011 1.254 4.338 1.7765 1.6575 0.7617 2.891 2.3147 3.0912 4.2424 0.1268 1.2206 0.2441 3.0042 0.2441 5.4269s-0.1173 4.2063 -0.2441 5.4269c-0.2002 1.9277 -1.4337 3.4807 -3.0912 4.2424 -1.1369 0.5225 -2.7273 1.2128 -4.338 1.7765 -1.5448 0.5407 -3.3505 1.0542 -4.8267 1.0542s-3.2819 -0.5135 -4.8267 -1.0542c-1.6107 -0.5637 -3.2011 -1.254 -4.338 -1.7765 -0.4868 -0.2237 -0.9371 -0.5157 -1.3353 -0.8654 -0.3982 0.3497 -0.8485 0.6417 -1.3353 0.8654 -1.1369 0.5225 -2.7273 1.2128 -4.338 1.7765 -1.5448 0.5407 -3.3505 1.0542 -4.8267 1.0542s-3.2819 -0.5135 -4.82673 -1.0542c-1.61069 -0.5637 -3.20109 -1.254 -4.33794 -1.7765 -1.65751 -0.7617 -2.89101 -2.3147 -3.09127 -4.2424C1.11726 37.4563 1 35.6727 1 33.25s0.11726 -4.2063 0.24406 -5.4269c0.20026 -1.9277 1.43376 -3.4807 3.09127 -4.2424 1.13685 -0.5225 2.72725 -1.2128 4.33794 -1.7765 1.01055 -0.3537 2.13273 -0.6957 3.20133 -0.89 -0.0604 -0.2387 -0.1043 -0.4848 -0.1305 -0.7373 -0.1268 -1.2206 -0.2441 -3.0042 -0.2441 -5.4269s0.1173 -4.2063 0.2441 -5.4269c0.2002 -1.92767 1.4337 -3.48066 3.0912 -4.2424 1.1369 -0.52247 2.7273 -1.21284 4.338 -1.77652ZM26 33.25c0 2.2939 0.111 3.9392 0.2226 5.0136 0.0426 0.41 0.305 0.8014 0.7831 1.0212 1.0801 0.4963 2.5441 1.1299 3.9888 1.6355 0.5386 0.1885 1.0442 0.3481 1.5055 0.4754v-8.6144c-0.3896 -0.1169 -0.8009 -0.2563 -1.218 -0.4079 -1.1472 -0.4168 -2.4418 -0.9631 -3.64 -1.4962 -0.5437 -0.2419 -1.0729 -0.4835 -1.5663 -0.7125C26.0305 31.0222 26 32.0469 26 33.25Zm10.5 -0.4687v8.6144c0.4613 -0.1273 0.9669 -0.2869 1.5055 -0.4754 1.4447 -0.5056 2.9087 -1.1392 3.9888 -1.6355 0.4781 -0.2197 0.7405 -0.6112 0.7831 -1.0212C42.889 37.1892 43 35.5439 43 33.25c0 -1.2031 -0.0305 -2.2278 -0.0757 -3.0853 -0.4934 0.229 -1.0226 0.4706 -1.5663 0.7125 -1.1982 0.5331 -2.4928 1.0794 -3.64 1.4962 -0.4171 0.1516 -0.8284 0.291 -1.218 0.4079ZM22 33.25c0 -1.2031 -0.0305 -2.2278 -0.0757 -3.0853 -0.4934 0.229 -1.0226 0.4706 -1.5663 0.7125 -1.1982 0.5331 -2.4928 1.0794 -3.64 1.4962 -0.4171 0.1516 -0.8284 0.291 -1.218 0.4079v8.6144c0.4613 -0.1273 0.9669 -0.2869 1.5055 -0.4754 1.4447 -0.5056 2.9087 -1.1392 3.9888 -1.6355 0.4781 -0.2197 0.7405 -0.6112 0.7831 -1.0212C21.889 37.1892 22 35.5439 22 33.25Zm-11.718 -0.8766c0.4171 0.1516 0.8284 0.291 1.218 0.4079v8.6144c-0.4613 -0.1273 -0.9669 -0.2869 -1.50545 -0.4754 -1.4447 -0.5056 -2.90879 -1.1392 -3.98887 -1.6355 -0.47806 -0.2198 -0.74044 -0.6112 -0.78303 -1.0212C5.11103 37.1892 5 35.5439 5 33.25c0 -1.2031 0.03054 -2.2278 0.07569 -3.0853 0.49337 0.229 1.02257 0.4706 1.56627 0.7125 1.19826 0.5331 2.49284 1.0794 3.64004 1.4962Zm5.2937 -20.7087c-0.0452 0.8575 -0.0757 1.8822 -0.0757 3.0853 0 2.2939 0.111 3.9392 0.2226 5.0136 0.0426 0.41 0.305 0.8015 0.7831 1.0212 1.0801 0.4963 2.5441 1.1299 3.9888 1.6355 0.5386 0.1885 1.0442 0.3481 1.5055 0.4754v-8.6144c-0.3896 -0.1169 -0.8009 -0.2563 -1.218 -0.4079 -1.1472 -0.4168 -2.4418 -0.9631 -3.64 -1.4962 -0.5437 -0.2419 -1.0729 -0.4835 -1.5663 -0.7125Zm11.9298 10.7556c-0.5386 0.1885 -1.0442 0.3481 -1.5055 0.4754v-8.6144c0.3896 -0.1169 0.8009 -0.2563 1.218 -0.4079 1.1472 -0.4168 2.4418 -0.9631 3.64 -1.4962 0.5437 -0.2419 1.0729 -0.4835 1.5663 -0.7125 0.0452 0.8575 0.0757 1.8822 0.0757 3.0853 0 2.2939 -0.111 3.9392 -0.2226 5.0136 -0.0426 0.41 -0.305 0.8015 -0.7831 1.0212 -1.0801 0.4963 -2.5441 1.1299 -3.9888 1.6355Z" clip-rule="evenodd" stroke-width="1"></path></g></svg>
-                                    <path d="M24 4L8 12V24C8 32 14 40 24 44C34 40 40 32 40 24V12L24 4Z" fill="none" stroke="#339a50" stroke-width="2"/>
-                                    <path d="M16 24L22 30L32 20" stroke="#339a50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <svg width="35" height="35" viewBox="0 0 24 24" fill="none">
+                                    <defs>
+                                        <linearGradient id="world-icon-gradient-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#a8e16a;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#339a50;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M12 3L4 7V11L12 15L20 11V7L12 3Z" stroke="url(#world-icon-gradient-3)" stroke-width="2"/>
+                                    <path d="M12 15V21" stroke="url(#world-icon-gradient-3)" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M8 17L12 21L16 17" stroke="url(#world-icon-gradient-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
                             <h3>Build with Confidence</h3>
@@ -93,6 +115,7 @@
             <section class="about">
                 <div class="about-content">
                     <div class="about-image">
+                        <img src="assets/images/image-5.png" alt="About">
                     </div>
                     <div class="about-text">
                         <p>Quamergy is a Web3 data ecosystem inspired by "quantum energy," designed to empower builders with dynamic, reliable, and composable data for Web3 applications. We're focused on delivering a decentralized data network, reimagined with a futuristic, energy-driven narrative. We've harnessed quantum-inspired energy to create a data ecosystem that sparks your creativity, simplifies your builds, and lets you focus on what truly matters.</p>
@@ -101,7 +124,7 @@
                 </div>
             </section>
 
-            <section class="features">
+            <section id="features" class="features">
                 <div class="features-content">
                     <h2>Quamergy Features</h2>
                     
@@ -112,7 +135,7 @@
                             <p>Your ideas deserve more than static data. Quamergy lets you build stunning dashboards, intelligent bots, powerful aggregators, and precise trackers—to every Web3 use case you dream up.</p>
                         </div>
                         <div class="main-feature-image">
-                            <!-- 预留图片容器 -->
+                            <img src="assets/images/image-2.png" alt="Quantum Composability">
                         </div>
                     </div>
                     
@@ -120,7 +143,7 @@
                     <div class="sub-features">
                         <div class="sub-feature">
                             <div class="sub-feature-image">
-                                <!-- 预留图片容器 -->
+                                <img src="assets/images/image-3.png" alt="Quantum Consensus Validation">
                             </div>
                             <div class="sub-feature-content">
                                 <h3>Quantum Consensus Validation</h3>
@@ -130,7 +153,7 @@
                         
                         <div class="sub-feature">
                             <div class="sub-feature-image">
-                                <!-- 预留图片容器 -->
+                                <img src="assets/images/image-4.png" alt="Dynamic Energy Flow">
                             </div>
                             <div class="sub-feature-content">
                                 <h3>Dynamic Energy Flow</h3>
@@ -143,63 +166,147 @@
 
             <section class="build-section">
                 <div class="build-content">
-                    <h2>Build Faster, Dream Bigger</h2>
-                    <div class="build-grid">
-                        <!-- 第一行 -->
+                    <h2>Build with Quamergy</h2>
+                    
+                    <!-- 原有的网页版内容 -->
+                    <div class="build-grid-top">
                         <div class="build-item">
                             <div class="build-icon">
-                                <!-- 预留图标容器 -->
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </div>
                             <h3>Data That Moves With You</h3>
                             <p>Quamergy offers custom, ready-to-use data points sourced from diverse streams. Create your own data hub or fine-tune an existing one to match your vision, with rewards for contributors who energize the network. This is data, reimagined for your Web3 journey.</p>
                         </div>
                         <div class="build-item">
                             <div class="build-icon">
-                                <!-- 预留图标容器 -->
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 7C4 5.34315 7.58172 4 12 4C16.4183 4 20 5.34315 20 7V17C20 18.6569 16.4183 20 12 20C7.58172 20 4 18.6569 4 17V7Z" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M4 12C4 13.6569 7.58172 15 12 15C16.4183 15 20 13.6569 20 12" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M4 7C4 8.65685 7.58172 10 12 10C16.4183 10 20 8.65685 20 7" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                </svg>
                             </div>
                             <h3>Datasets You Can Trust</h3>
                             <p>Quamergy is your go-to source for vast, scalable, and reliable datasets, perfect for building rich data products like dashboards. Every piece of data is validated through quantum consensus computation, ensuring accuracy and integrity, so you can build with complete peace of mind.</p>
                         </div>
+                    </div>
+                    
+                    <!-- 第二行三个 -->
+                    <div class="build-grid-bottom">
                         <div class="build-item">
                             <div class="build-icon">
-                                <!-- 预留图标容器 -->
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M19 12C19 13.8565 18.2625 15.637 16.9497 16.9497C15.637 18.2625 13.8565 19 12 19" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M5 12C5 10.1435 5.73754 8.36301 7.05025 7.05025C8.36297 5.73754 10.1435 5 12 5" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                </svg>
                             </div>
                             <h3>Instant Deployment</h3>
-                            <p>Launch Quamergy Nodes with One-Click Simplicity</p>
+                            <p>Launch Quamergy Nodes with One-Click Simplicity. Quamergy nodes are so lightweight, you can deploy them straight from GitHub Codespaces with a single click. Configure them flexibly to capture any data point, harnessing your computational and network resources with ease.</p>
                         </div>
-                        <!-- 第二行 -->
                         <div class="build-item">
                             <div class="build-icon">
-                                <!-- 预留图标容器 -->
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 4C3 3.44772 3.44772 3 4 3H20C20.5523 3 21 3.44772 21 4V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V4Z" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M7 14L10 11L13 14L17 8" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 8H17" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
                             </div>
                             <h3>Quantum Consensus Dashboard</h3>
                             <p>See your data come alive. Monitor the quantum consensus state of every on-chain data point in a sleek, unified dashboard—clarity, right at your fingertips.</p>
                         </div>
                         <div class="build-item">
                             <div class="build-icon">
-                                <!-- 预留图标容器 -->
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M17 3L21 7L17 11" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 13V11C3 9.89543 3.89543 9 5 9H21" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M7 21L3 17L7 13" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 11V13C21 14.1046 20.1046 15 19 15H3" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
                             </div>
                             <h3>APIs Tailored for You</h3>
                             <p>Quamergy nodes come with ready-to-use API endpoints, designed for your specific needs—like a Uniswap V2 summary dashboard API—energized and ready to power your next project.</p>
                         </div>
-                        <div class="build-item">
+                    </div>
+                    
+                    <!-- 手机端专用内容 -->
+                    <div class="mobile-build-items">
+                        <div class="mobile-build-item">
                             <div class="build-icon">
-                                <!-- 预留图标容器 -->
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 3L20 7.5V16.5L12 21L4 16.5V7.5L12 3Z" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M12 12L20 7.5" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M12 12V21" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M12 12L4 7.5" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3>Quantum Data Nodes</h3>
+                            <p>Deploy your own node in minutes. Access real-time, validated data from any chain, any protocol—all through a unified API.</p>
+                        </div>
+                        
+                        <div class="mobile-build-item">
+                            <div class="build-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 3L20 7.5V16.5L12 21L4 16.5V7.5L12 3Z" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M8 9L16 13" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M8 13L16 9" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3>Quantum Composability</h3>
+                            <p>Mix and match data sources. Create custom endpoints. Build dashboards, bots, and analytics tools that pull from multiple protocols simultaneously.</p>
+                        </div>
+                        
+                        <div class="mobile-build-item">
+                            <div class="build-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 4C3 3.44772 3.44772 3 4 3H20C20.5523 3 21 3.44772 21 4V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V4Z" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M7 14L10 11L13 14L17 8" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 8H17" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
                             </div>
                             <h3>Quantum Consensus Dashboard</h3>
                             <p>See your data come alive. Monitor the quantum consensus state of every on-chain data point in a sleek, unified dashboard—clarity, right at your fingertips.</p>
+                        </div>
+                        
+                        <div class="mobile-build-item">
+                            <div class="build-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M17 3L21 7L17 11" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 13V11C3 9.89543 3.89543 9 5 9H21" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M7 21L3 17L7 13" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 11V13C21 14.1046 20.1046 15 19 15H3" stroke="url(#icon-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3>APIs Tailored for You</h3>
+                            <p>Quamergy nodes come with ready-to-use API endpoints, designed for your specific needs—like a Uniswap V2 summary dashboard API—energized and ready to power your next project.</p>
+                        </div>
+                        
+                        <div class="mobile-build-item">
+                            <div class="build-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 3L20 7.5V16.5L12 21L4 16.5V7.5L12 3Z" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M12 12L20 7.5" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M12 12V21" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                    <path d="M12 12L4 7.5" stroke="url(#icon-gradient)" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3>Quantum Data Markets</h3>
+                            <p>Tap into specialized data markets—from DEX analytics to NFT rarity rankings—all validated through quantum consensus and ready for your applications.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="case-study">
+            <section id="product" class="case-study">
                 <div class="case-content">
                     <div class="case-image">
-                        <!-- 预留图片容器 -->
+                        <img src="assets/images/image-6.png" alt="Uniswap V2 Dashboard">
                     </div>
                     <div class="case-info">
-                        <span class="case-label">Case Study</span>
+                        <span class="case-label">Uniswap V2</span>
                         <h2>Uniswap V2 Monitoring Dashboard</h2>
                         <p>We've built the first Quamergy data market: Uniswap V2.</p>
                         <p>Track total trading volume, liquidity, top trading pairs, and more—all in real-time, validated, and without the need for crawlers.</p>
@@ -220,7 +327,7 @@
                         <p class="activate-footnote">This isn't just a data market—it's the launchpad for your creativity.</p>
                     </div>
                     <div class="activate-image">
-                        <!-- 预留图片容器 -->
+                        <img src="assets/images/image-7.png" alt="Data Activation">
                     </div>
                 </div>
             </section>
@@ -232,28 +339,28 @@
                         <!-- 第一行三个 -->
                         <div class="partners-row">
                             <div class="partner-item">
-                                <img src="assets/images/p-1.svg" alt="Partner logo">
+                                <img src="assets/images/p-1.png" alt="Partner logo">
                             </div>
                             <div class="partner-item">
-                                <img src="assets/images/p-1.svg" alt="Partner logo">
+                                <img src="assets/images/p-2.webp" alt="Partner logo">
                             </div>
                             <div class="partner-item">
-                                <img src="assets/images/p-1.svg" alt="Partner logo">
+                                <img src="assets/images/p-3.webp" alt="Partner logo">
                             </div>
                         </div>
                         <!-- 第二行四个 -->
                         <div class="partners-row">
                             <div class="partner-item">
-                                <img src="assets/images/p-1.svg" alt="Partner logo">
+                                <img src="assets/images/p-4.webp" alt="Partner logo">
                             </div>
                             <div class="partner-item">
-                                <img src="assets/images/p-1.svg" alt="Partner logo">
+                                <img src="assets/images/p-5.webp" alt="Partner logo">
                             </div>
                             <div class="partner-item">
-                                <img src="assets/images/p-1.svg" alt="Partner logo">
+                                <img src="assets/images/p-6.webp" alt="Partner logo">
                             </div>
                             <div class="partner-item">
-                                <img src="assets/images/p-1.svg" alt="Partner logo">
+                                <img src="assets/images/p-7.webp" alt="Partner logo">
                             </div>
                         </div>
                     </div>
@@ -270,14 +377,32 @@
                     <span>Quamergy</span>
                 </div>
                 <p class="footer-description">Redefining data for Web3. Build with confidence using our quantum-inspired data ecosystem.</p>
+                <div class="footer-social">
+                    <a href="https://t.me/Quamergy" target="_blank" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.2 4.4L2.9 10.7C1.8 11.1 1.8 11.7 2.7 12L6.8 13.1L16.2 7C16.7 6.7 17.1 6.9 16.8 7.2L9.3 14H9.2L9.3 14L9 18.3C9.4 18.3 9.6 18.1 9.8 17.9L11.8 16L16 19.1C16.9 19.6 17.5 19.3 17.7 18.3L20.9 5.8C21.2 4.6 20.5 4 19.2 4.4Z" fill="white" fill-opacity="0.8"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/Quamergy" target="_blank" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white" fill-opacity="0.8"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/dextools.svg" alt="Dextools" style="filter: brightness(0) invert(1); opacity: 0.8;">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/dexscreener.svg" alt="Dexscreener" style="filter: brightness(0) invert(1); opacity: 0.8;">
+                    </a>
+                </div>
             </div>
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Build</a></li>
-                    <li><a href="#">Ecosystem</a></li>
-                    <li><a href="#">Community</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#product">Product</a></li>
                 </ul>
             </div>
         </div>

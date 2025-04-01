@@ -162,4 +162,56 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', () => {
         canvas.height = document.querySelector('.hero').offsetHeight;
     });
+
+    // 添加平滑滚动效果的 JavaScript 增强
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80, // 减去 header 高度，避免内容被遮挡
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // 优化滚动动画触发
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // 如果元素可见
+            if (entry.isIntersecting) {
+                // 添加动画类而不是重置样式
+                entry.target.classList.add('animate-visible');
+                
+                // 停止观察已经显示的元素
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.15, // 提高阈值，使动画更精确
+        rootMargin: '-30px'
+    });
+    
+    // 添加性能优化
+    function optimizeAnimations() {
+        const animatedElements = document.querySelectorAll('.world-card, .main-feature-content, .main-feature-image, .sub-feature, .build-item, .case-image, .case-info, .activate-info, .activate-image, .partner-item');
+        
+        animatedElements.forEach(el => {
+            // 初始状态设置为不可见
+            el.style.opacity = '0';
+            el.classList.remove('animate-visible');
+            
+            // 观察元素
+            observer.observe(el);
+        });
+    }
+    
+    // 延迟执行以确保页面完全加载
+    setTimeout(optimizeAnimations, 100);
 }); 
